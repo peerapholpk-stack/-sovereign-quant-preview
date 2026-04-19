@@ -1,536 +1,528 @@
 <div align="center">
 
-<!-- Animated header effect with shields -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:161b22&height=200&section=header&text=SovereignQuant&fontSize=70&fontColor=58a6ff&animation=fadeIn&fontAlignY=35&desc=Financial%20Sovereignty%20Through%20Code&descAlignY=55&descSize=20"/>
+# SovereignQuant
 
-<!-- Badges with modern styling -->
-[![Stack](https://img.shields.io/badge/stack-FastAPI%20|%20Next.js%20|%20TimescaleDB-58a6ff?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Status](https://img.shields.io/badge/status-Production%20Ready-238636?style=for-the-badge)](LICENSE.md)
-[![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Docker](https://img.shields.io/badge/docker-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
+### Institutional-Grade Crypto Futures Trading Infrastructure
 
-<!-- Tagline with styling -->
-<h3>
-  <samp>
-    <b>Institutional-Grade Crypto Futures Trading Infrastructure</b><br>
-    <span style="color:#8b949e">Monte Carlo Risk • Market Regime Detection • Algorithmic Execution</span>
-  </samp>
-</h3>
+**Monte Carlo Risk Assessment | Market Regime Detection | Algorithmic Execution**
 
-<!-- Animated separator -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+[![License: Commercial](https://img.shields.io/badge/License-Commercial-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB.svg)](https://python.org)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://docker.com)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-TimescaleDB-336791.svg)](https://timescale.com)
 
 </div>
 
-<!-- Philosophy Quote Box -->
-<div align="center">
+---
 
-> ### 🏛️ The Sovereign Philosophy
-> 
-> *"In an era of centralized control and arbitrary platform restrictions,*  
-> *financial sovereignty is a fundamental right.*  
-> *Your servers. Your API keys. Your strategies. No compromises."*
+> "The power to create wealth through code is the ultimate expression of individual sovereignty in the digital age."
 
-</div>
+---
 
-<br>
+## Executive Summary
 
-<!-- Key Metrics Grid -->
-<div align="center">
+SovereignQuant is a production-ready trading infrastructure designed for quantitative developers and institutional operators who require autonomy, security, and performance without compromise. This is not a toy, nor a backtest-only simulator. It is a complete operational framework for deploying sophisticated algorithmic strategies on Binance Futures with institutional-grade risk controls.
 
-| ⚡ Sub-ms API | 🎲 10K Simulations | 🎯 4-State Regimes | 🛡️ Kill Switch |
-|:------------:|:------------------:|:------------------:|:--------------:|
-| Async FastAPI | Monte Carlo Risk | Trend/Range/Vol/Crisis | Auto-Circuit Breaker |
+### The Sovereign Philosophy
 
-</div>
+Financial sovereignty is a fundamental right. In an era of centralized control, surveillance, and arbitrary restrictions, the ability to programmatically manage capital without intermediaries represents the pinnacle of individual empowerment.
 
-<br>
+- **No Platform Lock-in**: Your code. Your servers. Your keys.
+- **Radical Transparency**: Every trade, every calculation, every risk metric is auditable.
+- **Complete Autonomy**: Deploy on a home server, a VPS in any jurisdiction, or a distributed cluster.
+- **Zero Trust Architecture**: Cryptographic security, encrypted API keys, kill-switches, and circuit breakers.
 
-<!-- Screenshots Section with styled headers -->
-## 📸 System Overview
+---
 
-<div align="center">
+## Core Capabilities
 
-<!-- Dashboard -->
-<table>
-<tr>
-<td width="50%">
+### 1. Binance Futures Integration
 
-<h3 align="center">📊 Command Center</h3>
-<p align="center"><i>Real-time portfolio tracking with P&L analytics</i></p>
+Unified margin mode support with real-time WebSocket market data feeds. Features sub-account isolation, seamless testnet-to-live transition, and comprehensive position and order management capabilities.
 
-```
-┌─────────────────────────────────────────┐
-│  BTCUSDT  ▲ 2.4%    Portfolio: $12,450 │
-│  ████████████████████░░░░░ +$345 today │
-│                                         │
-│  Positions    Trades      Regime       │
-│  ─────────────────────────────────────  │
-│  🟢 LONG      12         UPTREND       │
-│  🔴 SHORT      8         VOLATILE      │
-│                                         │
-│  Risk Level: 🟡 MODERATE               │
-└─────────────────────────────────────────┘
-```
+### 2. Monte Carlo Risk Simulations
 
-</td>
-<td width="50%">
+Stochastic modeling infrastructure executing 10,000+ simulation runs per strategy evaluation. Calculates Value-at-Risk (VaR) and Conditional VaR, generates drawdown probability distributions, optimizes position sizing, and provides black swan scenario stress testing.
 
-<h3 align="center">🎲 Risk Engine</h3>
-<p align="center"><i>10,000-scenario Monte Carlo simulation</i></p>
+### 3. Market Regime Detection
+
+Four-state classification system (Low/Normal/High/Crisis volatility regimes) with trend strength measurement via ADX-based algorithms. Detects correlation breakdowns, enables dynamic strategy selection based on detected regime, and provides regime transition probability forecasting.
+
+### 4. Risk Management Layer
+
+Configurable kill switches with drawdown thresholds, maximum drawdown circuit breakers, position size limits with portfolio heat monitoring, correlation-adjusted exposure limits, and automated equity curve monitoring.
+
+---
+
+## Architecture Overview
 
 ```
-┌─────────────────────────────────────────┐
-│  Monte Carlo Simulation Results       │
-│  ═══════════════════════════════════  │
-│                                         │
-│   VaR (95%):    -$234    ████░░░░░░   │
-│   CVaR:         -$312    █████░░░░░   │
-│   Max Drawdown: -15%     ████████░░   │
-│                                         │
-│   Win Rate:     62%      🟢            │
-│   Expectancy:   +$45/trade              │
-│                                         │
-└─────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│                              PRESENTATION                                │
+│  ┌─────────────┐  React 19 + TypeScript + Tailwind CSS + Framer Motion  │
+│  │   Next.js   │  Real-time WebSocket charts, Dark-first UI            │
+│  │   :3000     │  Progressive Web App capable                          │
+│  └──────┬──────┘                                                        │
+├─────────┼───────────────────────────────────────────────────────────────┤
+│         │                           API LAYER                           │
+│  ┌──────▼──────┐  FastAPI + Pydantic + SQLAlchemy 2.0                  │
+│  │   Backend   │  Async/await throughout, automatic OpenAPI docs        │
+│  │   :8000     │  JWT authentication, rate limiting, request logging  │
+│  └──────┬──────┘                                                        │
+├─────────┼───────────────────────────────────────────────────────────────┤
+│         │                          SERVICES                             │
+│  ┌──────▼──────┐  ┌──────────────┐  ┌──────────────┐                    │
+│  │   Worker    │  │   Monitor    │  │   Redis      │                    │
+│  │  Process    │  │   Service    │  │   Cache      │                    │
+│  │  Optimization│  │  Execution   │  │  Pub/Sub     │                    │
+│  └──────┬──────┘  └──────┬───────┘  └──────┬───────┘                    │
+├─────────┼────────────────┼────────────────┼─────────────────────────────┤
+│         │                │                │                           │
+│  ┌──────▼──────┐  ┌──────▼──────┐  ┌──────▼──────┐                    │
+│  │ TimescaleDB │  │  Binance    │  │  Notification│                    │
+│  │  PostgreSQL │  │    API      │  │   Services   │                    │
+│  └─────────────┘  └─────────────┘  └─────────────┘                    │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+### Technology Stack
 
-<h3 align="center">🎯 Regime Analytics</h3>
-<p align="center"><i>Market state classification with confidence</i></p>
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | Next.js 15, React 19, TypeScript, Tailwind CSS v4, Recharts |
+| **Backend API** | FastAPI, Uvicorn, Pydantic v2, SQLAlchemy 2.0 |
+| **Data Science** | Pandas 2.0+, NumPy 1.24+, CCXT Pro |
+| **Database** | PostgreSQL 15 + TimescaleDB (time-series optimized) |
+| **Cache/Queue** | Redis 7 (caching, pub/sub, Celery broker) |
+| **Deployment** | Docker, Docker Compose, Nginx |
+| **Security** | Cryptography (Fernet), JWT, encrypted at-rest |
 
-```
-┌─────────────────────────────────────────┐
-│  Market Regime Detection                │
-│  ═══════════════════════════════════    │
-│                                         │
-│  Current:    📈 UPTREND    87% conf     │
-│  Previous:   📊 SIDEWAYS   → 2h ago    │
-│                                         │
-│  Volatility: ████████░░    HIGH (2.1%)  │
-│  Trend Str:  ██████████   STRONG        │
-│  Correlation: ████░░░░░░   LOW           │
-│                                         │
-│  Strategy:   TREND_FOLLOW enabled      │
-└─────────────────────────────────────────┘
-```
+---
 
-</td>
-<td width="50%">
+## Quick Start Guide
 
-<h3 align="center">📈 Backtest Engine</h3>
-<p align="center"><i>Walk-forward optimization with metrics</i></p>
+### Prerequisites
 
-```
-┌─────────────────────────────────────────┐
-│  Strategy: Dual_MA_Crossover v2.1       │
-│  ═══════════════════════════════════════ │
-│                                         │
-│  Period:     2023-01 → 2024-12         │
-│  Trades:     156 (62% win rate)         │
-│  Return:     +127%     🟢              │
-│  Max DD:     -12.3%                    │
-│  Sharpe:     1.84                      │
-│  Sortino:    2.41                      │
-│                                         │
-│  [✓] Out-of-sample validated            │
-└─────────────────────────────────────────┘
-```
+- **Docker** 24.0+ and Docker Compose 2.20+
+- **Git** (for cloning)
+- **4GB+ RAM** (8GB recommended for production)
+- **Binance Account** with Futures enabled (start with Testnet)
 
-</td>
-</tr>
-</table>
-
-</div>
-
-<br>
-
-<!-- Architecture Section -->
-## 🏗️ Architecture
-
-```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#58a6ff', 'primaryTextColor': '#fff', 'primaryBorderColor': '#58a6ff', 'lineColor': '#8b949e', 'secondaryColor': '#238636', 'tertiaryColor': '#fff'}}}%%
-graph TB
-    subgraph "Presentation Layer"
-        A[Next.js 15 Frontend<br/>React 19 + TypeScript]
-    end
-    
-    subgraph "API Layer"
-        B[FastAPI Backend<br/>Async/Await + Pydantic v2]
-    end
-    
-    subgraph "Services Layer"
-        C[Worker Engine<br/>Optimization & Signals]
-        D[Monitor Service<br/>Execution & Alerts]
-        E[Redis Cache<br/>Pub/Sub + Queue]
-    end
-    
-    subgraph "Data Layer"
-        F[TimescaleDB<br/>Time-Series PostgreSQL]
-        G[Binance API<br/>Futures Markets]
-    end
-    
-    A <-->|HTTP/WebSocket| B
-    B -->|Jobs| C
-    B -->|Real-time| D
-    B <-->|Cache| E
-    C -->|Store| F
-    D <-->|Execute| G
-    B -->|Query| F
-```
-
-<br>
-
-<!-- Features Grid -->
-## ⚡ Capabilities
-
-<table>
-<tr>
-<td valign="top" width="33%">
-
-### 🔥 Trading Engine
-- **Binance Futures** (USDT-M & COIN-M)
-- **Long/Short** with unified margin
-- **Real-time WebSocket** feeds
-- **Paper trading** mode
-- **Testnet → Live** transition
-
-</td>
-<td valign="top" width="33%">
-
-### 🎲 Risk Management
-- **Monte Carlo** (10K+ scenarios)
-- **VaR & CVaR** calculations
-- **Drawdown** probability
-- **Black swan** stress testing
-- **Position heat** monitoring
-
-</td>
-<td valign="top" width="33%">
-
-### 🎯 Market Intelligence
-- **4-state regime** detection
-- **Volatility** tracking
-- **Trend strength** (ADX)
-- **Regime-aware** selection
-- **Correlation** analysis
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<!-- Safety Systems Highlight -->
-<div align="center">
-
-## 🛡️ Safety Systems
-
-| System | Function | Trigger |
-|:------:|:--------:|:-------:|
-| **Kill Switch** | Emergency shutdown | Drawdown threshold breach |
-| **Circuit Breakers** | Daily/weekly limits | Loss limit exceeded |
-| **Pre-Trade Checks** | Risk validation | Every order |
-| **Duplicate Detection** | Signal deduplication | Before execution |
-
-</div>
-
-<br>
-
-<!-- Stack Section -->
-## 🛠️ Technology Stack
-
-<div align="center">
-
-| Layer | Technology | Purpose |
-|:-----:|:----------:|:-------:|
-| Frontend | ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) | Dashboard UI |
-| Backend | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white) | REST + WebSocket API |
-| Database | ![PostgreSQL](https://img.shields.io/badge/TimescaleDB-336791?logo=postgresql&logoColor=white) | Time-series data |
-| Cache | ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white) | Caching, pub/sub |
-| Exchange | CCXT Pro | Binance integration |
-| Data Science | Pandas 2.0+ / NumPy 1.24+ | Analytics |
-| Deployment | ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) | Containerization |
-| Security | Fernet / JWT | Encryption & auth |
-
-</div>
-
-<br>
-
-<!-- Deployment Section -->
-## 🚀 Deploy in Minutes
+### 1. Clone and Configure
 
 ```bash
-# 1. Clone repository (after purchase)
-git clone https://github.com/peerapholpk-stack/sovereign-quant.git
-cd sovereign-quant
+# Clone the repository
+git clone https://github.com/yourusername/sovereign-quant-boilerplate.git
+cd sovereign-quant-boilerplate
 
-# 2. Configure environment
+# Copy the environment template
 cp .env.example .env
-# Edit .env with your API keys
 
-# 3. Launch infrastructure
-docker-compose up -d
-
-# 4. Access services
-# Dashboard:    http://localhost:3000
-# API Docs:     http://localhost:8000/docs
-# Database:     localhost:5432
+# Edit .env with your configuration
+nano .env  # or use your preferred editor
 ```
 
-<br>
+### 2. Generate Security Keys
 
-<!-- Requirements -->
-## 📋 Requirements
+```bash
+# Generate encryption key for API credentials
+openssl rand -hex 32
 
-<div align="center">
+# Copy this value to ENCRYPTION_KEY in your .env
 
-| Minimum | Recommended |
-|:-------:|:-----------:|
-| 2 vCPU | 4 vCPU |
-| 4GB RAM | 8GB RAM |
-| Docker 24.0+ | Docker 24.0+ |
-| Binance account | Binance Futures enabled |
+# Generate JWT secret
+openssl rand -base64 32
 
-</div>
+# Copy to JWT_SECRET_KEY in your .env
+```
 
-<br>
+### 3. Configure Binance (Testnet First)
 
-<!-- The Sovereign Difference -->
-<div align="center">
+1. Visit [Binance Futures Testnet](https://testnet.binancefuture.com/)
+2. Generate API Key and Secret
+3. Add to `.env`:
+   ```
+   BINANCE_API_KEY=your_testnet_key
+   BINANCE_API_SECRET=your_testnet_secret
+   USE_TESTNET=true
+   ```
 
-## 💎 The Sovereign Difference
+### 4. Launch Infrastructure
 
-<table>
-<tr>
-<td align="center" width="25%">
+```bash
+# Build and start all services
+docker-compose up -d
 
-### 🔓 **Open Source Core**
-*Your code. Your servers. Your keys.*
+# Verify all services are healthy
+docker-compose ps
 
-</td>
-<td align="center" width="25%">
+# View logs
+docker-compose logs -f backend
+docker-compose logs -f worker
+```
 
-### ⚡ **Performance**
-*Sub-millisecond API response times*
+### 5. Access the Platform
 
-</td>
-<td align="center" width="25%">
+| Service | URL | Description |
+|---------|-----|-------------|
+| Dashboard | http://localhost:3000 | Trading interface |
+| API Docs | http://localhost:8000/docs | Interactive OpenAPI/Swagger |
+| API (Alt) | http://localhost:8000/redoc | ReDoc documentation |
+| Database | localhost:5432 | TimescaleDB |
+| Redis | localhost:6379 | Cache/Queue |
 
-### 🔬 **Scientific Rigor**
-*10,000-scenario Monte Carlo validation*
+### 6. Initialize Database
 
-</td>
-<td align="center" width="25%">
+```bash
+# Run migrations (inside backend container)
+docker-compose exec backend alembic upgrade head
 
-### 🛡️ **Military-Grade Safety**
-*Kill switches and circuit breakers*
+# Or manually create tables on first run
+# (automatic on startup if configured)
+```
 
-</td>
-</tr>
-</table>
+### 7. Verify Trading (Testnet)
 
-</div>
+```bash
+# Check exchange connectivity
+curl http://localhost:8000/api/v1/exchange/status
 
-<br>
+# View account balance
+curl http://localhost:8000/api/v1/account/balance \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
 
-<!-- Perfect For Section -->
-## 🎯 Perfect For
+# Start paper trading
+curl -X POST http://localhost:8000/api/v1/trading/mode \
+  -H "Content-Type: application/json" \
+  -d '{"mode": "paper", "symbol": "BTCUSDT"}'
+```
 
-<div align="center">
+---
 
-| Who | Why |
-|:---:|:---:|
-| **Quant Developers** | Build custom algorithmic strategies |
-| **Prop Traders** | Manage multiple accounts with unified risk |
-| **Crypto Funds** | Deploy systematic strategies |
-| **Individual Traders** | Automate proven manual strategies |
-| **SaaS Founders** | White-label trading infrastructure |
+## Directory Structure
 
-</div>
+```
+sovereign-quant-boilerplate/
+├── backend/                    # FastAPI application
+│   ├── api/                   # Route handlers
+│   ├── core/                  # Config, security, logging
+│   ├── models/                # SQLAlchemy ORM
+│   ├── schemas/               # Pydantic models
+│   ├── services/              # Business logic
+│   │   ├── binance_service.py
+│   │   ├── risk_controller.py
+│   │   ├── regime_detector.py
+│   │   └── monte_carlo.py
+│   └── main.py                # Application entry
+├── frontend/                   # Next.js application
+│   ├── src/
+│   │   ├── app/              # App router (Next.js 13+)
+│   │   ├── components/       # React components
+│   │   ├── hooks/            # Custom React hooks
+│   │   ├── lib/              # Utilities
+│   │   └── types/            # TypeScript definitions
+│   ├── public/               # Static assets
+│   └── package.json
+├── worker/                     # Background processing
+│   ├── optimization_engine.py
+│   ├── signal_processor.py
+│   └── trade_executor.py
+├── database/                   # Migrations & schemas
+│   ├── init/
+│   └── migrations/
+├── monitoring/                 # Prometheus/Grafana
+│   ├── prometheus.yml
+│   └── grafana/
+├── nginx/                      # Reverse proxy config
+├── docker-compose.yml          # Production orchestration
+├── Dockerfile                  # Multi-stage build
+└── .env.example               # Configuration template
+```
 
-<br>
+---
 
-<!-- Pricing Section -->
-<div align="center">
+## Configuration Reference
 
-## 💰 Pricing
+### Critical Environment Variables
 
-### One-time payment. Lifetime access. No subscriptions.
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `BINANCE_API_KEY` | Required | Exchange API key |
+| `BINANCE_API_SECRET` | Required | Exchange API secret |
+| `USE_TESTNET` | Required | `true` for testnet, `false` for live |
+| `ENCRYPTION_KEY` | Required | 64-char hex for credential encryption |
+| `JWT_SECRET_KEY` | Required | Session signing key |
+| `DATABASE_URL` | Required | PostgreSQL connection string |
+| `REDIS_URL` | Required | Redis connection string |
+| `ENABLE_LIVE_TRADING` | Required | `false` until explicitly ready |
+| `ADMIN_PASSWORD` | Required | Change from default immediately |
 
-<br>
+### Risk Control Settings
 
-<table>
-<tr>
-<td align="center" width="33%">
+```env
+# Position Limits
+MAX_POSITION_SIZE_USD=1000
+MAX_LEVERAGE=5
+MAX_OPEN_POSITIONS=3
 
-### 🥉 Starter
-## $299
+# Risk Per Trade
+RISK_PER_TRADE_PERCENT=2.0
+MAX_DAILY_LOSS_PERCENT=5.0
+MAX_WEEKLY_LOSS_PERCENT=10.0
 
-✅ Full source code  
-✅ Single deployment  
-✅ GitHub Issues support  
-✅ 6 months updates
+# Kill Switch (emergency shutdown)
+ENABLE_KILL_SWITCH=true
+KILL_SWITCH_THRESHOLD=0.15  # 15% drawdown triggers halt
+```
 
-❌ Commercial use  
-❌ Multiple deployments
+### Monte Carlo Settings
 
-</td>
-<td align="center" width="33%" style="border:2px solid #58a6ff; border-radius:10px;">
+```env
+MC_SIMULATION_RUNS=10000
+MC_CONFIDENCE_LEVEL=0.95
+MC_USE_ANTITHETIC_VARIATES=true
+MC_BLACK_SWAN_PROBABILITY=0.01
+```
 
-### 🥈 Professional
-## $599
+---
 
-✅ Everything in Starter  
-✅ **Commercial use**  
-✅ **3 deployments**  
-✅ **Priority support**  
-✅ 12 months updates  
-✅ 1hr strategy consult
+## Risk Management Features
 
-*Most Popular*
+### Kill Switch System
 
-</td>
-<td align="center" width="33%">
+The kill switch is a non-negotiable safety mechanism that:
+- Monitors account equity in real-time
+- Immediately cancels all open orders on threshold breach
+- Closes all positions (configurable: market or limit)
+- Sends alerts via all configured channels
+- Requires manual reset after activation
 
-### 🥇 Enterprise
-## $1,499
+### Regime-Based Strategy Guardrails
+- Prevents trend-following strategies in ranging markets
+- Reduces position size in high volatility regimes
+- Automatically selects mean-reversion in mean-reverting regimes
+- Logs all regime transitions for audit
 
-✅ Everything in Pro  
-✅ **Unlimited deployments**  
-✅ **White-label rights**  
-✅ Private Telegram  
-✅ 24 months updates  
-✅ 4hrs custom dev  
-✅ Onboarding call
+### Pre-Trade Risk Checks (Every Order)
+1. Maximum position size not exceeded
+2. Portfolio heat within limits
+3. Correlation exposure acceptable
+4. Sufficient margin buffer
+5. No duplicate signal detection
+6. Kill switch not activated
 
-</td>
-</tr>
-</table>
+---
 
-<br>
+## Deployment Options
 
-### 🎁 Limited Time Offer
-**Use code `SOVEREIGN20` for 20% off** (first 50 customers)
+### Development (Local)
+```bash
+docker-compose up -d
+```
 
-</div>
+### Production VPS (Single Node)
+```bash
+# Copy .env.production and configure
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+```
 
-<br>
+### With Monitoring Stack
+```bash
+docker-compose --profile monitoring up -d
+# Access Grafana at http://localhost:3001 (admin/admin)
+```
 
-<!-- CTA Section -->
-<div align="center">
+### Cloud Providers
+- **AWS**: Use ECS or EKS with RDS PostgreSQL and ElastiCache
+- **GCP**: Cloud Run for API, Cloud SQL, Memorystore
+- **DigitalOcean**: Managed PostgreSQL + Redis, Docker Droplet
+- **Hetzner**: Cost-effective dedicated servers
 
-## 🛒 Get SovereignQuant
+---
 
-### Secure Payment Options
+## API Documentation
 
-💳 Credit/Debit Card | ₿ BTC/ETH/USDT | 🏦 Bank Transfer (Enterprise)
+Interactive documentation is automatically generated:
 
-<br>
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+- **OpenAPI JSON**: http://localhost:8000/openapi.json
 
-**[👉 Purchase on Lemon Squeezy](YOUR-STORE-URL-HERE)**
+### Example API Call
 
-<br>
+```bash
+# Authenticate and get token
+TOKEN=$(curl -s -X POST http://localhost:8000/api/v1/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"admin","password":"your_password"}' \
+  | jq -r '.access_token')
 
-*Or contact for custom licensing:* **peeraphol.ka@gmail.com**
+# Fetch portfolio status
+curl http://localhost:8000/api/v1/portfolio/status \
+  -H "Authorization: Bearer $TOKEN" \
+  | jq
+```
 
-</div>
+---
 
-<br>
+## Licensing Tiers
 
-<!-- Support Section -->
-## 📞 Support
+SovereignQuant is available under two commercial license tiers:
 
-SovereignQuant is built for **self-reliant, capable developers**.
+### Sovereign (Personal) — $349
 
-### ✅ What You Get
-- **Repository Access** — Full source + updates
-- **GitHub Issues** — Bug reports & infrastructure issues
-- **GitHub Discussions** — Community knowledge sharing
+**For individual quantitative developers managing personal capital.**
 
-### ❌ Out of Scope
-- ❌ Strategy consulting or financial advice
-- ❌ Coding tutoring or Python lessons
-- ❌ Custom deployments or 1-on-1 calls
+Includes:
+- Full source code access
+- Single deployment license (personal use only)
+- Self-managed fund operations
+- Access to private GitHub repository
+- Core infrastructure updates
+
+Restrictions:
+- Personal use only
+- No commercial or SaaS deployment
+- No resale or redistribution rights
+
+---
+
+### Enterprise (Commercial) — $899
+
+**For prop firms, funds, and SaaS operators.**
+
+Includes:
+- Everything in Sovereign tier
+- Commercial use license
+- SaaS deployment rights
+- Fund operation authorization
+- Multiple deployment instances
+- White-label rights available (contact for terms)
+- Priority support queue
+
+Target Users:
+- Proprietary trading firms
+- Crypto hedge funds
+- Trading infrastructure SaaS providers
+- Multi-account operators
+
+---
+
+## Support Policy
+
+SovereignQuant is engineered for technically autonomous quantitative developers. Our support model reflects the product's self-reliant philosophy.
+
+### Support Method
+
+All support is handled **exclusively via GitHub Issues** in the private repository.
+
+- **Response Time:** 48-72 hours (working days)
+- **Support Scope:** Core infrastructure bugs and technical defects only
+- **No Direct Messaging:** All communication is asynchronous through GitHub
+
+### In Scope
+
+- Infrastructure bugs and defects
+- Installation and deployment issues
+- API and integration problems
+- Security vulnerabilities
+
+### Explicitly Out of Scope
+
+The following are **NOT** provided under any license tier:
+
+- **Strategy Development:** No financial strategy consulting, backtest validation, or trading logic advisory.
+- **Programming Tutoring:** No Python lessons, Docker training, or general software engineering instruction.
+- **Custom Deployments:** No 1-on-1 setup calls, server configuration assistance, or infrastructure management services.
+- **Financial Advice:** No investment recommendations, portfolio advice, or trading decisions guidance.
 
 ### Contact
-For critical access issues: **peeraphol.ka@gmail.com** *(48-72h response)*
 
-<br>
+For critical access issues or payment inquiries: **peeraphol.ka@gmail.com**
 
-<!-- FAQ Accordion Style -->
-<details>
-<summary><h3 style="display:inline">❓ Frequently Asked Questions</h3></summary>
+*(Note: This email is for billing and access issues only. Technical support must go through GitHub Issues.)*
 
-<br>
+---
 
-**Q: Is this a "black box" trading bot?**  
-A: No. SovereignQuant is **infrastructure**, not signals. You bring your own strategies.
+## Documentation
 
-**Q: What exchanges are supported?**  
-A: Currently **Binance Futures**. More coming in v1.1.
+Documentation is intentionally minimal. SovereignQuant is built on industry-standard technologies with extensive public documentation:
 
-**Q: Do I need to know how to code?**  
-A: Basic Python knowledge is recommended for strategy customization.
+| Topic | Resource |
+|-------|----------|
+| **FastAPI** | https://fastapi.tiangolo.com |
+| **Next.js** | https://nextjs.org/docs |
+| **TimescaleDB** | https://docs.timescale.com |
+| **SQLAlchemy** | https://docs.sqlalchemy.org |
+| **CCXT** | https://docs.ccxt.com |
 
-**Q: Can I run this on my home computer?**  
-A: Yes, but a **VPS is recommended** for 24/7 operation.
+### API Reference
 
-**Q: Is there a refund policy?**  
-A: Due to source code nature, **all sales are final**. Evaluate thoroughly before purchase.
+Once running, interactive documentation is available at:
+- **Swagger UI:** http://localhost:8000/docs
+- **ReDoc:** http://localhost:8000/redoc
+- **OpenAPI JSON:** http://localhost:8000/openapi.json
 
-**Q: Can I resell this?**  
-A: Only with **Enterprise license** (white-label rights).
+---
 
-</details>
+## License & Legal
 
-<br>
+### Commercial License
 
-<!-- Roadmap -->
-<details>
-<summary><h3 style="display:inline">🚧 Development Roadmap</h3></summary>
+This software is provided under a **Commercial License**. See [LICENSE](LICENSE) for full terms.
 
-<br>
+### STRICT FINANCIAL DISCLAIMER
 
-### 2025 Q2 (Current: v1.0) ✅
-- Binance Futures integration
-- Monte Carlo risk engine
-- Market regime detection
+**SOVEREIGNQUANT IS SOFTWARE, NOT FINANCIAL ADVICE.**
 
-### 2025 Q3 (v1.1) 🔄
-- Bybit Futures support
-- ML predictions module
-- Mobile app
+By using this software, you acknowledge and agree to the following:
 
-### 2025 Q4 (v1.2) 🔄
-- Strategy marketplace
-- Multi-account portfolio
-- Advanced options strategies
+1. **No Guarantees:** Past performance of any strategy or algorithm does not guarantee future results. Markets are inherently unpredictable.
 
-</details>
+2. **Risk of Loss:** Cryptocurrency futures trading involves **substantial risk of loss** and is not suitable for all investors. You may lose more than your initial investment.
 
-<br>
+3. **No Liability:** The authors, contributors, and distributors of SovereignQuant assume **no liability** for any trading losses, system failures, data inaccuracies, or damages arising from the use of this software.
 
-<!-- Footer -->
+4. **Your Responsibility:** You are solely responsible for:
+   - Strategy development and validation
+   - Risk parameter configuration
+   - Capital allocation decisions
+   - Compliance with local laws and regulations
+   - Security of your API keys and infrastructure
+
+5. **Not Investment Advice:** No communication from SovereignQuant or its representatives constitutes investment advice, recommendation, or solicitation.
+
+6. **Sovereign Risk:** You operate this software at your own risk. The "sovereign" concept emphasizes **individual responsibility**. There is no safety net, no bailout, and no recourse for poor decisions.
+
+7. **Test Thoroughly:** Always use testnet and paper trading extensively before deploying real capital.
+
+**Use this software at your own risk. Trade responsibly. Protect your capital.**
+
+---
+
+## Contributing
+
+While SovereignQuant is primarily a commercial product, we welcome:
+- Bug reports via GitHub Issues
+- Security vulnerability reports (see SECURITY.md)
+- Feature requests for roadmap consideration
+
+---
+
+## Acknowledgments
+
+SovereignQuant is built on the shoulders of open-source giants:
+- [FastAPI](https://fastapi.tiangolo.com/) by Sebastián Ramírez
+- [CCXT](https://github.com/ccxt/ccxt) by the CCXT team
+- [TimescaleDB](https://www.timescale.com/) for time-series excellence
+- [Next.js](https://nextjs.org/) by Vercel
+
+---
+
 <div align="center">
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-### ⚠️ Disclaimer
-
-**SovereignQuant is software, not financial advice.**
-
-Cryptocurrency futures trading involves **substantial risk of loss**. Past performance does not guarantee future results. You are solely responsible for your trading decisions.
-
-This repository contains **NO source code** — it is a promotional preview only. Source code delivered after purchase under commercial license.
-
-<br>
+**[Back to Top](#sovereignquant)**
 
 *Built for those who refuse to outsource their financial destiny.*
-
-**[⬆ Back to Top](#sovquant)**
 
 </div>
